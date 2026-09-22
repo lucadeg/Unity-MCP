@@ -1,3 +1,4 @@
+
 # ┌──────────────────────────────────────────────────────────────────┐
 # │  Author: Ivan Murzak (https://github.com/IvanMurzak)             │
 # │  Repository: GitHub (https://github.com/IvanMurzak/Unity-MCP)    │
@@ -9,10 +10,8 @@
 name: release
 
 on:
-  push:
-    branches:
-      - main
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   test-cli:
     uses: ./.github/workflows/test_cli.yml
